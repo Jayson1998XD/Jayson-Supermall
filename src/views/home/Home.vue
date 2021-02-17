@@ -4,23 +4,86 @@
     <home-swiper :banners="banners"/>
     <recommend-view :recommends="recommends" />
     <feature-view></feature-view>
+    <tab-contorl class="tab-contorl" :titles="['推荐','流行','新款']"></tab-contorl>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+    <h2>内容</h2>
+
+
   </div>
 </template>
 
 <script>
-import NavBar from "components/common/navbar/NavBar";
 import HomeSwiper from "./childComps/HomeSwiper"
-
-import { getHomeMultidata } from "network/home";
 import RecommendView from './childComps/RecommendView.vue';
 import FeatureView from './childComps/FeatureView'
+
+import NavBar from "components/common/navbar/NavBar";
+import TabContorl from "components/content/TabContorl/TabContorl"
+
+import { getHomeMultidata } from "network/home";
+
 export default {
   name: "Home",
   components: {
     NavBar,
     HomeSwiper,
     RecommendView,
-    FeatureView
+    FeatureView,
+    TabContorl,
   },
   data() {
     return {
@@ -51,5 +114,11 @@ export default {
   right: 0;
   top: 0;
   z-index: 9;
+}
+
+.tab-contorl {
+  position: sticky;
+  top: 44px;
+  background-color: #fff;
 }
 </style>
